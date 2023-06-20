@@ -23,7 +23,7 @@
 
 ## Второстепенные задачи
 
-- Исправить тест ```tests/Feature/Api/DomainUpdateTest```
+- Разобраться почему не проходит```tests/Feature/Api/DomainUpdateTest```
 
 - Описать в каких случаях ```tests/Unit/FakerTest```  будет завершаться с ошибкой
 
