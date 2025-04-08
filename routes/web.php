@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HostingController;
+use App\Http\Middleware\DomainRestrictionMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::fallback([HostingController::class, 'fallback']);
+Route::fallback([HostingController::class, 'fallback'])
+	->middleware(DomainRestrictionMiddleware::class);
